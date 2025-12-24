@@ -15,7 +15,7 @@ const stats = [
     icon: Users,
     value: 50,
     suffix: '+',
-    label: 'Current Clients',
+    label: 'Happy Clients',
     description: 'Trusted partnerships across Sri Lanka',
   },
   {
@@ -86,12 +86,13 @@ function AnimatedNumber({ value, suffix }: { value: number; suffix: string }) {
 
 export default function Stats() {
   return (
-    <section className="relative py-24 overflow-hidden">
+    <section id="stats" className="relative py-24 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-dark-900">
         <div className="absolute inset-0 geo-pattern opacity-30"></div>
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-500/30 to-transparent"></div>
         <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-500/30 to-transparent"></div>
+        <div className="orb orb-gold w-[400px] h-[400px] -top-48 left-1/4"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
@@ -99,12 +100,12 @@ export default function Stats() {
           {stats.map((stat, index) => (
             <div
               key={stat.label}
-              className="text-center group"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="reveal text-center group"
+              style={{ transitionDelay: `${index * 0.1}s` }}
             >
               {/* Icon */}
-              <div className="inline-flex items-center justify-center w-16 h-16 mb-6 bg-dark-800/50 border border-primary-500/20 rounded-sm group-hover:border-primary-500/50 group-hover:bg-dark-800 transition-all duration-500">
-                <stat.icon className="w-7 h-7 text-primary-500" />
+              <div className="inline-flex items-center justify-center w-20 h-20 mb-6 bg-dark-800/60 backdrop-blur-sm border border-primary-500/20 rounded-2xl group-hover:border-primary-500/50 group-hover:bg-dark-800 transition-all duration-500 group-hover:scale-110">
+                <stat.icon className="w-9 h-9 text-primary-500" />
               </div>
 
               {/* Number */}
@@ -122,4 +123,3 @@ export default function Stats() {
     </section>
   )
 }
-
