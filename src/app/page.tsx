@@ -40,7 +40,8 @@ export default function Home() {
       <Services />
       <Projects />
       <DirectorMessage />
-      <Team />
+      {/* Team section temporarily hidden - component preserved for future use */}
+      {/* <Team /> */}
       <Contact />
       <CTA />
     </>

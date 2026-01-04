@@ -2,13 +2,13 @@
 
 import { useState, useEffect } from 'react'
 import { Menu, X, Phone, Mail } from 'lucide-react'
+import Image from 'next/image'
 
 const navLinks = [
   { href: '#home', label: 'Home' },
   { href: '#about', label: 'About' },
   { href: '#services', label: 'Services' },
   { href: '#projects', label: 'Projects' },
-  { href: '#team', label: 'Team' },
   { href: '#contact', label: 'Contact' },
 ]
 
@@ -101,8 +101,15 @@ export default function Header() {
             {/* Logo */}
             <a href="#home" onClick={(e) => scrollToSection(e, '#home')} className="flex items-center gap-3 group">
               <div className="relative">
-                <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center transform group-hover:scale-105 transition-transform duration-300 shadow-lg shadow-primary-500/20">
-                  <span className="text-dark-950 font-bold text-2xl">G</span>
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center transform group-hover:scale-105 transition-transform duration-300 shadow-lg shadow-primary-500/20 overflow-hidden">
+                  <Image
+                    src="/images/logo/graventa01.png"
+                    alt="Graventa Constructions Logo"
+                    width={48}
+                    height={48}
+                    className="object-contain"
+                    priority
+                  />
                 </div>
                 <div className="absolute -inset-1 bg-primary-500/20 rounded-xl blur-md group-hover:blur-lg transition-all duration-300 -z-10"></div>
               </div>
