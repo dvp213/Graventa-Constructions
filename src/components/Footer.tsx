@@ -1,13 +1,13 @@
 'use client'
 
 import { MapPin, Phone, Mail, Clock, ArrowRight, Facebook, Linkedin, Instagram } from 'lucide-react'
+import Image from 'next/image'
 
 const quickLinks = [
   { href: '#home', label: 'Home' },
   { href: '#about', label: 'About Us' },
   { href: '#services', label: 'Services' },
   { href: '#projects', label: 'Projects' },
-  { href: '#team', label: 'Team' },
   { href: '#contact', label: 'Contact' },
 ]
 
@@ -44,8 +44,14 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <a href="#home" onClick={(e) => scrollToSection(e, '#home')} className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center shadow-lg shadow-primary-500/20">
-                <span className="text-dark-950 font-display font-bold text-2xl">G</span>
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center shadow-lg shadow-primary-500/20 overflow-hidden">
+                <Image
+                  src="/images/logo/graventa01.png"
+                  alt="Graventa Constructions Logo"
+                  width={48}
+                  height={48}
+                  className="object-contain"
+                />
               </div>
               <div className="flex flex-col">
                 <span className="font-display text-xl font-bold text-white tracking-wide">GRAVENTA</span>
