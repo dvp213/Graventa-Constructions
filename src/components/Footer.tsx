@@ -8,7 +8,7 @@ const quickLinks = [
   { href: '#about', label: 'About Us' },
   { href: '#services', label: 'Services' },
   { href: '#projects', label: 'Projects' },
-  { href: '#contact', label: 'Contact' },
+  { href: '#reviews', label: 'Reviews' },
 ]
 
 const services = [
@@ -59,7 +59,8 @@ export default function Footer() {
               </div>
             </a>
             <p className="text-dark-400 leading-relaxed mb-6">
-              Building excellence since 2015. We deliver high-quality construction and maintenance solutions that exceed expectations.
+              Building excellence since 2015. We deliver high-quality construction and maintenance solutions that exceed expectations.The company is duly registered in Sri Lanka under 
+              Company Registration No: PV 00346807.
             </p>
             <div className="flex gap-3">
               {[Facebook, Linkedin, Instagram].map((Icon, i) => (
@@ -126,28 +127,38 @@ export default function Footer() {
             </h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-dark-800/60 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <MapPin size={18} className="text-primary-500" />
-                </div>
-                <span className="text-dark-400 text-sm">
-                  No. 123, Galle Road,<br />
-                  Colombo 03, Sri Lanka
-                </span>
+                <a 
+                  href="https://maps.app.goo.gl/qTCEVCFuxDR5mxPTA" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-dark-800/60 rounded-xl flex items-center justify-center flex-shrink-0 hover:bg-primary-500 hover:text-dark-950 transition-all duration-300 group"
+                >
+                  <MapPin size={18} className="text-primary-500 group-hover:text-dark-950" />
+                </a>
+                <a 
+                  href="https://maps.app.goo.gl/qTCEVCFuxDR5mxPTA" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-dark-400 text-sm hover:text-primary-500 transition-colors"
+                >
+                  No. 25, Galle Road,<br />
+                  Colombo, Sri Lanka
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-dark-800/60 rounded-xl flex items-center justify-center flex-shrink-0">
                   <Phone size={18} className="text-primary-500" />
                 </div>
                 <a href="tel:+94771234567" className="text-dark-400 text-sm hover:text-primary-500 transition-colors">
-                  +94 77 123 4567
+                  +94 72 871 5398
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-dark-800/60 rounded-xl flex items-center justify-center flex-shrink-0">
                   <Mail size={18} className="text-primary-500" />
                 </div>
-                <a href="mailto:info@graventa.lk" className="text-dark-400 text-sm hover:text-primary-500 transition-colors">
-                  info@graventa.lk
+                <a href="mailto:graventaconstruction@gmail.com" className="text-dark-400 text-sm hover:text-primary-500 transition-colors">
+                  graventaconstruction@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3">

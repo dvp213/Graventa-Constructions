@@ -9,7 +9,7 @@ const navLinks = [
   { href: '#about', label: 'About' },
   { href: '#services', label: 'Services' },
   { href: '#projects', label: 'Projects' },
-  { href: '#contact', label: 'Contact' },
+  { href: '#reviews', label: 'Reviews' },
 ]
 
 export default function Header() {
@@ -74,16 +74,16 @@ export default function Header() {
           <div className="flex items-center gap-6 text-dark-400">
             <a href="tel:+94771234567" className="flex items-center gap-2 hover:text-primary-500 transition-colors">
               <Phone size={14} className="text-primary-500" />
-              <span>+94 77 123 4567</span>
+              <span>+94 72 871 5398</span>
             </a>
-            <a href="mailto:info@graventa.lk" className="flex items-center gap-2 hover:text-primary-500 transition-colors">
+            <a href="mailto:graventaconstruction@gmail.com" className="flex items-center gap-2 hover:text-primary-500 transition-colors">
               <Mail size={14} className="text-primary-500" />
-              <span>info@graventa.lk</span>
+              <span>graventaconstruction@gmail.com</span>
             </a>
           </div>
           <div className="text-dark-500 flex items-center gap-2">
             <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-            Building Excellence Since 2015
+            Company Registration No: PV 00346807
           </div>
         </div>
       </div>
@@ -147,7 +147,7 @@ export default function Header() {
                 onClick={(e) => scrollToSection(e, '#contact')}
                 className="px-6 py-3 bg-gradient-to-r from-primary-600 to-primary-500 text-dark-950 font-semibold rounded-full hover:from-primary-500 hover:to-primary-400 transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/30 hover:-translate-y-0.5"
               >
-                Get a Quote
+                Contact Us
               </a>
             </div>
 
@@ -200,18 +200,18 @@ export default function Header() {
             onClick={(e) => scrollToSection(e, '#contact')}
             className="block w-full text-center py-4 mt-8 bg-gradient-to-r from-primary-600 to-primary-500 text-dark-950 font-semibold rounded-full"
           >
-            Get a Quote
+            Contact Us
           </a>
           
           {/* Mobile contact info */}
           <div className="mt-8 pt-8 border-t border-dark-800/50 space-y-4">
             <a href="tel:+94771234567" className="flex items-center gap-3 text-dark-400 hover:text-primary-500 transition-colors">
               <Phone size={18} className="text-primary-500" />
-              <span>+94 77 123 4567</span>
+              <span>+94 72 871 5398</span>
             </a>
-            <a href="mailto:info@graventa.lk" className="flex items-center gap-3 text-dark-400 hover:text-primary-500 transition-colors">
+            <a href="mailto:graventaconstruction@gmail.com" className="flex items-center gap-3 text-dark-400 hover:text-primary-500 transition-colors">
               <Mail size={18} className="text-primary-500" />
-              <span>info@graventa.lk</span>
+              <span>graventaconstruction@gmail.com</span>
             </a>
           </div>
         </div>

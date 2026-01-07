@@ -6,6 +6,7 @@ import Stats from '@/components/Stats'
 import About from '@/components/About'
 import Services from '@/components/Services'
 import Projects from '@/components/Projects'
+import Reviews from '@/components/Reviews'
 import Team from '@/components/Team'
 import DirectorMessage from '@/components/DirectorMessage'
 import Contact from '@/components/Contact'
@@ -39,6 +40,7 @@ export default function Home() {
       <About />
       <Services />
       <Projects />
+      <Reviews />
       <DirectorMessage />
       {/* Team section temporarily hidden - component preserved for future use */}
       {/* <Team /> */}

@@ -13,7 +13,7 @@ const highlights = [
 
 export default function About() {
   return (
-    <section id="about" className="relative py-24 lg:py-32 overflow-hidden">
+    <section id="about" className="relative py-12 lg:py-14 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-dark-950">
         <div className="absolute inset-0 geo-pattern opacity-20"></div>
@@ -76,7 +76,8 @@ export default function About() {
                 <strong className="text-white">Graventa Constructions (Pvt) Ltd</strong> is a trusted name 
                 in the construction industry with over 10 years of proven experience in delivering high-quality 
                 construction and maintenance solutions. We have successfully completed numerous projects across 
-                residential, commercial, and industrial sectors.
+                residential, commercial, and industrial sectors.The company is duly registered in Sri Lanka under 
+                Company Registration No: PV 00346807.
               </p>
               <p>
                 Our strength lies in combining modern engineering practices with practical expertise, enabling 

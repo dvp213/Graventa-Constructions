@@ -107,7 +107,7 @@ export default function Projects() {
 
   return (
     <>
-      <section id="projects" className="relative py-24 lg:py-32 overflow-hidden">
+      <section id="projects" className="relative py-12 lg:py-14 overflow-hidden">
         {/* Background */}
         <div className="absolute inset-0 bg-dark-950">
           <div className="absolute inset-0 geo-pattern opacity-20"></div>

@@ -86,7 +86,7 @@ function AnimatedNumber({ value, suffix }: { value: number; suffix: string }) {
 
 export default function Stats() {
   return (
-    <section id="stats" className="relative py-24 overflow-hidden">
+    <section id="stats" className="relative py-10 lg:py-12 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-dark-900">
         <div className="absolute inset-0 geo-pattern opacity-30"></div>

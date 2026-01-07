@@ -27,7 +27,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="relative py-24 lg:py-32 overflow-hidden">
+    <section id="contact" className="relative py-12 lg:py-14 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-dark-900">
         <div className="absolute inset-0 geo-pattern opacity-20"></div>
@@ -57,9 +57,9 @@ export default function Contact() {
             
             <div className="space-y-4">
               {[
-                { icon: MapPin, label: 'Office', value: 'No. 123, Galle Road,\nColombo 03, Sri Lanka' },
-                { icon: Phone, label: 'Phone', value: '+94 77 123 4567', href: 'tel:+94771234567' },
-                { icon: Mail, label: 'Email', value: 'info@graventa.lk', href: 'mailto:info@graventa.lk' },
+                { icon: MapPin, label: 'Office', value: 'No. 25, Galle Road,\nColombo, Sri Lanka', href: 'https://maps.app.goo.gl/qTCEVCFuxDR5mxPTA', external: true },
+                { icon: Phone, label: 'Phone', value: '+94 72 871 5398', href: 'tel:+94728715398' },
+                { icon: Mail, label: 'Email', value: 'graventaconstruction@gmail.com', href: 'mailto:graventaconstruction@gmail.com' },
                 { icon: Clock, label: 'Hours', value: 'Mon - Fri: 8AM - 6PM' },
               ].map((item, i) => (
                 <div key={i} className="card p-4 flex items-start gap-4 hover-card">
@@ -69,7 +69,12 @@ export default function Contact() {
                   <div>
                     <div className="font-medium text-white mb-1">{item.label}</div>
                     {item.href ? (
-                      <a href={item.href} className="text-dark-400 text-sm hover:text-primary-400 whitespace-pre-line transition-colors">
+                      <a 
+                        href={item.href} 
+                        target={item.external ? '_blank' : undefined}
+                        rel={item.external ? 'noopener noreferrer' : undefined}
+                        className="text-dark-400 text-sm hover:text-primary-400 whitespace-pre-line transition-colors"
+                      >
                         {item.value}
                       </a>
                     ) : (
@@ -131,7 +136,7 @@ export default function Contact() {
                         value={formState.phone}
                         onChange={handleChange}
                         className="w-full px-4 py-3.5 bg-dark-800/60 border border-dark-700/50 rounded-xl text-white placeholder-dark-500 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all"
-                        placeholder="+94 77 123 4567"
+                        placeholder="+94 72 871 5398"
                       />
                     </div>
                     <div>

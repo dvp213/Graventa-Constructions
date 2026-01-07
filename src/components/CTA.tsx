@@ -15,7 +15,7 @@ export default function CTA() {
   }
 
   return (
-    <section className="relative py-24 overflow-hidden">
+    <section className="relative py-10 lg:py-12 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-r from-primary-600 to-primary-500">
         <div className="absolute inset-0 geo-pattern opacity-10"></div>
@@ -59,7 +59,7 @@ export default function CTA() {
             className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-dark-950/40 text-dark-950 font-semibold rounded-full hover:bg-dark-950/10 transition-all duration-300"
           >
             <Phone className="w-5 h-5" />
-            +94 77 123 4567
+            +94 72 871 5398
           </a>
         </div>
       </div>

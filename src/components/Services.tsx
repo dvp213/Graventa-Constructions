@@ -62,7 +62,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="relative py-24 lg:py-32 overflow-hidden">
+    <section id="services" className="relative py-12 lg:py-14 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-dark-900">
         <div className="absolute inset-0 geo-pattern opacity-20"></div>

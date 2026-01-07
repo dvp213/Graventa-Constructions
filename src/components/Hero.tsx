@@ -22,7 +22,7 @@ export default function Hero() {
   }
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-[calc(100vh-80px)] flex items-start overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-dark-950">
         <div className="absolute inset-0 geo-pattern opacity-40"></div>
@@ -48,7 +48,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-32">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 pt-4 pb-20 lg:pt-6 lg:pb-24">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
           <div className="space-y-8">
