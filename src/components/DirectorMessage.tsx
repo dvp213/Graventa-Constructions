@@ -4,7 +4,7 @@ import { Quote } from 'lucide-react'
 
 export default function DirectorMessage() {
   return (
-    <section className="relative py-24 overflow-hidden">
+    <section className="relative py-12 lg:py-14 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-dark-900">
         <div className="absolute inset-0 geo-pattern opacity-20"></div>
