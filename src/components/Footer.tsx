@@ -141,8 +141,8 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-dark-400 text-sm hover:text-primary-500 transition-colors"
                 >
-                  No. 25, Galle Road,<br />
-                  Colombo, Sri Lanka
+                  561/A, Madhiwela Road,<br />
+                  Thalawathugoda, Sri Lanka
                 </a>
               </li>
               <li className="flex items-center gap-3">
