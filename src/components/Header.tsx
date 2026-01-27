@@ -72,7 +72,7 @@ export default function Header() {
       <div className="bg-dark-950 border-b border-dark-800/50 py-2 hidden md:block">
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center text-sm">
           <div className="flex items-center gap-6 text-dark-400">
-            <a href="tel:+94771234567" className="flex items-center gap-2 hover:text-primary-500 transition-colors">
+            <a href="tel:+94728715398" className="flex items-center gap-2 hover:text-primary-500 transition-colors">
               <Phone size={14} className="text-primary-500" />
               <span>+94 72 871 5398</span>
             </a>
@@ -205,7 +205,7 @@ export default function Header() {
           
           {/* Mobile contact info */}
           <div className="mt-8 pt-8 border-t border-dark-800/50 space-y-4">
-            <a href="tel:+94771234567" className="flex items-center gap-3 text-dark-400 hover:text-primary-500 transition-colors">
+            <a href="tel:+94728715398" className="flex items-center gap-3 text-dark-400 hover:text-primary-500 transition-colors">
               <Phone size={18} className="text-primary-500" />
               <span>+94 72 871 5398</span>
             </a>
