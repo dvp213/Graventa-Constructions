@@ -143,7 +143,6 @@ export default function Footer() {
                 >
                   No. 561/A, Madhiravela Road,<br />
                   Thalawathugoda, Sri Lanka
-                  Colombo, Sri Lanka
                 </a>
               </li>
               <li className="flex items-center gap-3">
