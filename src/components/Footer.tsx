@@ -141,7 +141,8 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-dark-400 text-sm hover:text-primary-500 transition-colors"
                 >
-                  No. 25, Galle Road,<br />
+                  No. 561/A, Madhiravela Road,<br />
+                  Thalawathugoda, Sri Lanka
                   Colombo, Sri Lanka
                 </a>
               </li>

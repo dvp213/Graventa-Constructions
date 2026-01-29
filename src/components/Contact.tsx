@@ -57,7 +57,7 @@ export default function Contact() {
             
             <div className="space-y-4">
               {[
-                { icon: MapPin, label: 'Office', value: 'No. 25, Galle Road,\nColombo, Sri Lanka', href: 'https://maps.app.goo.gl/qTCEVCFuxDR5mxPTA', external: true },
+                { icon: MapPin, label: 'Office', value: 'No. 561/A, Madhiravela Road,\nThalawathugoda, Sri Lanka', href: 'https://maps.app.goo.gl/qTCEVCFuxDR5mxPTA', external: true },
                 { icon: Phone, label: 'Phone', value: '+94 72 871 5398', href: 'tel:+94728715398' },
                 { icon: Mail, label: 'Email', value: 'graventaconstruction@gmail.com', href: 'mailto:graventaconstruction@gmail.com' },
                 { icon: Clock, label: 'Hours', value: 'Mon - Fri: 8AM - 6PM' },
